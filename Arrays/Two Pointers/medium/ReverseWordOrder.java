@@ -28,7 +28,7 @@
 
 class Solution {
     public String reverseWordOrder(String s) {
-        String[] arrayOfString = s.trim().split("[^a-zA-Z0-9.?]+");
+        String[] arrayOfString = s.trim().split("[^a-zA-Z0-9!.?]+");
         int esquerda = 0;
         int direita = arrayOfString.length - 1;
         
