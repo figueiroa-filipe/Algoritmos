@@ -54,15 +54,14 @@ class Solution {
         while (esquerda < direita) {
             int soma = arr[esquerda] + arr[direita];
 
-            if (soma == target){
+            if (soma == target)
+            {
                 int first = arr[esquerda];
                 int second = arr[direita];
                 List<Integer> tempList = Arrays.asList(first, second);
-
-                if (!lista.contains(tempList))
-                {
-                    lista.add(tempList);
-                }
+                
+                if (!lista.contains(tempList)) lista.add(tempList);
+                
                 direita--;
                 esquerda++;
             }
